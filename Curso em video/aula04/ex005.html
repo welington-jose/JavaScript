@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: #5561cf;
+            color: white;
+            font: normal 18pt arial;
+        }   
+    </style>
+</head>
+<body class="fundo">
+    <h1>
+        Iniciando estudos com DOM
+    </h1>
+    <P>
+        Aqui vai o resultado
+    </P>
+    <p class="msg">Aprendendo a usar <strong> DOM </strong> em JavaScript</p>
+    <div> Cique Aqui</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]//selecionado o primeiro parágrafo
+        window.document.write('Oque esta escrito no primeiro parágrafo é : ' +  p1.innerHTML) // innerText = o texto que esta dentro da variável selecionada. (não seleciona as tags filhas HTML)
+        //inneHTML = tbm seleciona oque esta na variável e tbm seleciona as tag filhas HTML.
+        var corpo = window.document.body
+        corpo.style.background ='purple'
+
+        var d = window.document.querySelector('.msg')
+        d.style.color = "Blue"
+        
+        
+       
+    </script>
+
+</body>
+</html>
