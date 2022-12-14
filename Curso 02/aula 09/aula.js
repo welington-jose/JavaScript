@@ -1,17 +1,22 @@
-//If..Else
-//Se a hora estiver entre 06:00 e 12:00 : Bom Dia!
-//Se estiver entre 12:00 até 18:00 : Boa Tarde!
-//Caso contrário : Boa noite!
-const hora = new Date().toLocaleTimeString()
+var permissao // comum, gerente, diretor
+permissao = 'Diretor'
+
+switch (permissao) {
+    case 'comum':
+    console.log('Usuário Comum')
+    break
+
+    case 'gerente':
+    console.log('Usuário gerente')
+    break
+
+    case 'Diretor':
+    console.log('Usuário diretor')
+    break
+    default:
+    console.log('Uruário não reconhecido!')
 
 
-if (hora > 6 && hora < 12) {
-    console.log('Bom dia!')
-}
-else if (hora > 12 && hora < 18) {
-    console.log('Boa tarde!')
-}
-else{
-    console.log('Boa Noite')
-}
 
+   
+}
