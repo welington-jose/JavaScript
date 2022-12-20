@@ -15,4 +15,5 @@ else if (hora > 12 && hora < 18) {
 else{
     console.log('Boa Noite')
 }
+console.log(hora)
 
