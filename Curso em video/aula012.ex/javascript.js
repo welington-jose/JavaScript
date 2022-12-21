@@ -22,5 +22,7 @@ function carregar() {
         document.body.style.background =  "#696969"
         
     }
-    window.location.reload();
+    setInterval(() => {
+        window.location.reload();
+    }, 1000);
 }
