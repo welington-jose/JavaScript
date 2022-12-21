@@ -23,7 +23,7 @@ function carregar() {
         
     }
     var carPag = setInterval(() => {
-        window.location.reload()}, 10000)
+        window.location.reload()}, 100000)
     
 
     
