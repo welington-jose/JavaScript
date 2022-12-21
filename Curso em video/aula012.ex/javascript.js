@@ -1,6 +1,4 @@
-function carregar() {
-
-
+function carregar() { 
     var hora = new Date().getHours()
     var min = new Date().getMinutes()
     var msg = document.getElementById('msg')
@@ -11,16 +9,16 @@ function carregar() {
 
     
     if(hora >= 6 && hora <= 12) {
-  //  img.src = 'imagens/manhã.jpg' 
+    img.src = 'manhã.jpg' 
     document.body.style.background = '#008B8B'
         
     }
     else if(hora >12 && hora <=18) {
-      //  img.src = 'imagem/tarde.jpg'
+        img.src = 'tarde.jpg'
         document.body.style.background = '#BDB76B'
     }
     else{
-      //  img.src = 'imagem/noite.jpg'
+        img.src = 'noite.jpg'
         document.body.style.background =  "#696969"
         
     }

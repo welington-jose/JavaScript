@@ -22,16 +22,14 @@ section{
     text-align: center  ;
 }
 
-#imagem{
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#foto{
+    padding: 15px;
+    text-align: center;
 }
 img{
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
 
 }
 
