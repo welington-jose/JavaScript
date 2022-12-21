@@ -24,7 +24,7 @@ function carregar() {
     }
     var carPag = setInterval(function() {
         window.location.reload();}, 10000)
-    
+    clearTimeout(carPag)
 
     
         
