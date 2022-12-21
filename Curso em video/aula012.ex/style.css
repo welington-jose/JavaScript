@@ -18,11 +18,21 @@ section{
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
-#horario{
+#msg{
     text-align: center  ;
 }
+
 #imagem{
-   
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+
 }
 
 footer{

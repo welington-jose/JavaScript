@@ -1,32 +1,28 @@
-var hora = new Date().getHours()
-var min = new Date().getMinutes()
-var corpo = document.querySelector('body')
-
-if(hora >= 6 && hora <= 12) {
-    corpo.style.background = '#008B8B'
-    
-}
-else if(hora >12 && hora <=18) {
-    corpo.style.background = '#BDB76B'
-}
-else(
-    corpo.style.background = "#696969"
-    
-)
-var horario = document.querySelector('#horario')
-horario.innerHTML = `Agora são ${hora} horas e ${min} minutos !`
-
-var img = document.querySelector('#imagem')
+function carregar() {
 
 
-if(hora >= 6 && hora <= 12) {
-    img.style.background = "imagens\manhã.jpg"
+    var hora = new Date().getHours()
+    var min = new Date().getMinutes()
+    var msg = document.getElementById('msg')
+    var img = document.getElementById('imagem')
+
+    console.log(min)
+    msg.innerHTML = `Agora são ${hora} horas e ${min} minutos !`
+
     
+    if(hora >= 6 && hora <= 12) {
+  //  img.src = 'imagens/manhã.jpg' 
+    document.body.style.background = '#008B8B'
+        
+    }
+    else if(hora >12 && hora <=18) {
+      //  img.src = 'imagem/tarde.jpg'
+        document.body.style.background = '#BDB76B'
+    }
+    else{
+      //  img.src = 'imagem/noite.jpg'
+        document.body.style.background =  "#696969"
+        
+    }
+
 }
-else if(hora >12 && hora <=18) {
-    corpo.style.background = '#BDB76B'
-}
-else(
-    corpo.style.background = "#696969"
-    
-)
