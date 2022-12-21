@@ -22,9 +22,9 @@ function carregar() {
         document.body.style.background =  "#696969"
         
     }
-    var carPag = setInterval(function() {
-        window.location.reload();}, 10000)
-    clearTimeout(carPag)
+    var carPag = setInterval(() => {
+        window.location.reload()}, 10000)
+    clearInterval(carPag)
 
     
         
