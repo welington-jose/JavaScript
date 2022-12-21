@@ -22,5 +22,5 @@ function carregar() {
         document.body.style.background =  "#696969"
         
     }
-    window.location.reload(false);
+    setTimeout(, 3000).window.location.reload(false);
 }
