@@ -22,5 +22,5 @@ function carregar() {
         document.body.style.background =  "#696969"
         
     }
-    setTimeout(carregar, 10000).
+    setTimeout(carregar, 10000)
 }
